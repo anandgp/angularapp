@@ -1,0 +1,145 @@
+<br>
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div class="row">
+                        <div class="col-xs-12 col-12 col-md-4 form-group">
+                            <input type="text" placeholder="Select date" class="form-control" bsDaterangepicker>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Total Sales</div>
+                    <div class="text-value" style="text-align: center;">$ 12345.25</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Orders</div>
+                    <div class="text-value" style="text-align: center;">10</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Average Order</div>
+                    <div class="text-value" style="text-align: center;">$ 1589.82</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Max Order</div>
+                    <div class="text-value" style="text-align: center;">$ 7532.82</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Stores</div>
+                    <div class="text-value" style="text-align: center;">5</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Active Customer</div>
+                    <div class="text-value" style="text-align: center;">20</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>New Customer</div>
+                    <div class="text-value" style="text-align: center;">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Total Customers</div>
+                    <div class="text-value" style="text-align: center;">30</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Cashflow</div>
+                    <div class="text-value" style="text-align: center;">$ 12345.25</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class="card-body pb-0">
+                    <div>Payments</div>
+                    <div class="text-value" style="text-align: center;">$ 35.7 </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-black bg-white">
+                <div class=" card-body pb-0 ">
+                    <div>Free Cashflow</div>
+                    <div class="text-value" style="text-align: center;">$ 12345.25</div>
+                </div>
+
+            </div>
+        </div>.
+    </div>
+    <div class="card-columns cols-2 ">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="row ">
+                    <div class="col-sm-5 ">
+                        <h4 class="card-title mb-0 " style="text-align: center;">Sales</h4>
+                    </div>
+                    <div class="col-sm-7 d-none d-md-block ">
+                        <button type="button " class="btn btn-primary float-right "><i class="icon-cloud-download "></i></button>
+                    </div>
+                    <br>
+                </div>
+                <div class="chart-wrapper ">
+                    <canvas baseChart class="chart " [datasets]="mainChartData " [labels]="mainChartLabels " [options]="mainChartOptions " [colors]="mainChartColours " [legend]="mainChartLegend " [chartType]="mainChartType "></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="height: 370px;">
+            <div class="card-body ">
+                <div class="row ">
+                    <div class="col-sm-5 ">
+                        <h4 class="card-title mb-0 " style="text-align: center;">Categories</h4>
+                    </div>
+                    <div class="col-sm-7 d-none d-md-block ">
+                        <button type="button " class="btn btn-primary float-right "><i class="icon-cloud-download "></i></button>
+                    </div>
+                    <div class="chart-wrapper ">
+                        <a href="http://www.chartjs.org ">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body ">
+                    <div class="chart-wrapper ">
+                        <canvas baseChart class="chart " [data]="pieChartData " [labels]="pieChartLabels " [chartType]="pieChartType " (chartHover)="chartHovered($event) " (chartClick)="chartClicked($event) "></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
